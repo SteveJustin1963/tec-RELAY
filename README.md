@@ -53,6 +53,9 @@ The RELAY BOARD takes up to 8 relays and these can be turned ON and OFF in absol
 
 The above diagram shows a close-up of the plug which connects the relay board to the TEC-1. It is made up of a wire-wrap socket and a dip-header plug. The wirewrap socket is mounted on the components side of the board with its long leads extending out the side shown in the photo. The dip plug is soldered onto these 'thick' leads, effectively turning them into thin pins suitable for inserting into the EXPANSION PORT socket.
 
+Program listing
+
+![](https://github.com/SteveJustin1963/tec-RELAY/blob/master/DOES.png)
 
 
 
