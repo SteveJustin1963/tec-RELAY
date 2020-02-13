@@ -64,6 +64,18 @@ Here is an overall view of the program: The program consists of 3 sections: The 
 The delay-value is loaded into the register pair and decremented by one. The accumulator is then loaded with the contents of the D register and the E register is ORed with the accumulator. The result appear in the accumulator. The accumulator will be zero if both D and E are completely zero and this will set the zero flag. The next instruction JP NZ 909 checks if the zero flag has been set and if it has, the computer will execute the next instruction. If it has not been set, the computer will jump to 909 and perform another 
 DECrement instruction. 
 
+![](https://github.com/SteveJustin1963/tec-RELAY/blob/master/time-graph.png)
+
+When the nested delay is zero, the computer will decrement the outer delay, check that it is not zero and proceed to decrement the inner delay. When the two delays are BOTH zero, the original values of the six registers are pulled (POPed) off the stack and the program returns to the main program. 
+
+## DELAY LENGTHS
+The values 00 00 in the data at 0A00 may look like a short delay length, but they are not. If fact we have tried to trick you! 00 is, in fact the longest delay you can get! If you load the register with 00 00 it is decremented by one to get FF FF and then checked to see if the value is zero. As you can see, it is not! The shortest delay is 01 00 as this is immediately decremented to 00 00, then checked. To give an example of the time taken to execute 00 00, we place 00 00, in 'the nested delay and 01 00 in the outer delay. This will produce a time delay of 2 seconds, when the computer is turned to the high position. The value IC 00 for the outer delay will produce a time of about 1 minute. If you require a delay of 10 minutes, the value of the outer delay is increased 10-fold by inserting the value 1C OA. For a 100-minute delay, the value is 1C 64. See the HEX table on P.16 for additional values.  
+
+## RUNNING THE ROUTINE
+
+Enter the program into the TEC-1 and set it into operation. It will take 10 minutes to execute and has 8 steps. There are six 1-minute steps and two 2-minute steps. The length of the delay for each step can be individually programmed as can the data for the number of relays which are to be activated. The accompanying diagram shows the various relays which will be activated and by referring to this, you will be aided in designing your own program. More details will be given in the next issue. 
+
+
 
 
 ## PCB
