@@ -33,7 +33,7 @@ If you have the MON-1 EPROM, enter the following at 0800:
 The first relay will switch on and the computer will reset. Substitute different values for 01 in the program and watch the operation of the relay or relays. With this RELAY BOARD your TEC-1 can access the REAL WORLD. We will now show you how to use it and produce delay routines of varying length so that you can turn lights, motors and pieces of equipment on and off. 
 
 ## PARTS LIST
-* 8 1k'/4 watt
+* 8 1k 1/4 watt
 * 1 100n greencap
 * 8 BC 547 or BC 338 transistors
 * 8 1N 4002 diodes
@@ -43,6 +43,9 @@ The first relay will switch on and the computer will reset. Substitute different
 * 1 - dip header 24 pin
 * 1 - 20 pin IC socket
 
+The RELAY BOARD takes up to 8 relays and these can be turned ON and OFF in absolutely ANY order, by the program we have developed. The only limitations are very heavy currents and high voltages. The relays are somewhat exposed and are close to the components on the TEC1, so we do not suggest 240v switching. Secondly the relays are designed for 1 amp operation and should be limited to around this value for reliable operation. We suggest only low voltage operation (12v) with currents up to 1 amp for the relays and transistors. We have a high current version (3 amp), S 4066 and this will enable loads up to 36 watts to be handled by each output. This is quite considerable in electronic terms. Higher currents and voltages will have to be handled via a relay which is remotely positioned so that it can be provided with the insulation it needs. Don't forget, - any relays switching high voltages can still have a 12v coil. This means that you can combine relays and transistors on the one RELAY BOARD. For fast sequencing, a set of transistors will be the best choice as relays have a low operating frequency. The choice of using a relay or transistor will depend on the type of load you are driving. You will need to know such factors as current requirements, voltage, speed of operation and if any spikes are present. Our main concern at this stage is to test the RELAY BOARD and get it working. To do this you will will need some form of indication on each of the outputs to show when they are operating. This can be a miniature lamp or a light emitting diode. Fit 8 of these and keep them near each relay to show which relay they are indicating. The program that we have developed for this project controls the 8 outputs and will switch them ON and OFF in any combination, as per the program. It is merely a matter of changing the data at 0A00 to produce the required sequence. The data governs the time of the delay between each operation and this can be set for a millisecond delay or up to a 100-hour delay. To do 
 
+The diagram shows a close-up of the plug which connects the relay board to the TEC-1. It is made up of a wire-wrap socket and a dip-header plug. The wirewrap socket is mounted on the components side of the board with its long leads extending out the side shown in the photo. The dip plug is soldered onto these 'thick' leads, effectively turning them into thin pins suitable for inserting into the EXPANSION PORT socket.
 
+![](
 
