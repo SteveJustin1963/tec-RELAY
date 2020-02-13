@@ -33,15 +33,15 @@ If you have the MON-1 EPROM, enter the following at 0800:
 The first relay will switch on and the computer will reset. Substitute different values for 01 in the program and watch the operation of the relay or relays. With this RELAY BOARD your TEC-1 can access the REAL WORLD. We will now show you how to use it and produce delay routines of varying length so that you can turn lights, motors and pieces of equipment on and off. 
 
 ## PARTS LIST
-*8 1k'/4 watt
-*1 100n greencap
-*8 BC 547 or BC 338 transistors
-*8 1N 4002 diodes
-*8 - relays SPDT type S 4060
-*1 - 74LS273 Latch IC
-*1 - wire-wrap socket 24 pin
-*1 - dip header 24 pin
-*1 - 20 pin IC socket
+* 8 1k'/4 watt
+* 1 100n greencap
+* 8 BC 547 or BC 338 transistors
+* 8 1N 4002 diodes
+* 8 - relays SPDT type S 4060
+* 1 - 74LS273 Latch IC
+* 1 - wire-wrap socket 24 pin
+* 1 - dip header 24 pin
+* 1 - 20 pin IC socket
 
 
 
