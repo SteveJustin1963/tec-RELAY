@@ -59,6 +59,13 @@ https://github.com/SteveJustin1963/tec-RELAY/blob/master/program%2011-53
 
 ![](https://github.com/SteveJustin1963/tec-RELAY/blob/master/DOES.png)
 
+Here is an overall view of the program: The program consists of 3 sections: The main program is at 800. This can be likened to a cook book. They both give an overall picture of what you are trying to achieve. The second part of the program is the DELAY ROUTINE. This is at 900 and is similar to the mixing.and cooking times for a recipe. They both involve TIME, and this is the important element of this section. The third part is the DATA. This is similar to the ingredients: flour, milk, eggs, etc. The more flour you add, the longer you have to mix. That's a simple analogy. This is how it works: The main program (the procedure for the recipe. Such as getting out the  bowls and equipment) contains all the 'setting-up' data and instructions with the first instruction, at 801, telling the computer how many cakes (steps) you require. At 900 the length of time for the mixing will depend on quantity of flour and milk is going to be used. 0A00 contains the quantity of these ingredients. The program can make up to 256 cakes (steps) before it starts to repeat. The main program may look complex  but most of it is a set-up routine, like getting everything together to make a cake. To extend this program is very easy, all you need do is add a 5-byte block of data to the end of the data at 0A00. Each block will produce one more delay and instruct a set of relays to come on at the end of the delay. The value of 'B' at 801 must correspond to the number of steps in the program otherwise it will be forgotten! The first three bytes in the delay (at 0900) PUSH the registers onto the STACK making the delay 'transparent' to the main program. At the end of the delay, the registers are POPPED off the stack. This means that they will contain the same value after the delay, as they had before it. The main part of the delay program consists of two routines, one inside the other. The inside or 'nested' delay starts at 906 and uses the register pair DE.  
+
+## PCB
+![](https://github.com/SteveJustin1963/tec-RELAY/blob/master/pcb.png)
+
+
+
 
 
 
