@@ -6,3 +6,9 @@
 
 
 
+## Iterate
+- Using asm code measure the response time of various mechanical relays and solid state relays. 
+- Convert asm code to MINT code and repeat test. Table the differences. Report.
+- Connect relays to other projects and see how well they perform, eg; cnc, globe, robot arm etc.
+
+## Ref
