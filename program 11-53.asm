@@ -1,4 +1,10 @@
 ;  It loads data from 0A00h into IX, then outputs it to port 3.
+;  first loading the values at 0A00h into IX, and then it's loading IX+00 into A. 
+;  then doing the same thing for IX+01, IX+03, and IX+04. 
+;  then incrementing HL twice. 
+;  then outputting A to 03 and calling 0900. 
+;  then decrementing B and checking if it's equal to 0. 
+;  If it is, it pops AF, BC, and DE off the stack and returns.
  
 .org 0800h
   LD  B,00DDh      ;NUMBER OF STEPS
