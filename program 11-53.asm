@@ -1,6 +1,5 @@
-; This code is part of a music player. It loads data from 0A00h into IX, then outputs it to port 3.
-
-
+;  It loads data from 0A00h into IX, then outputs it to port 3.
+ 
 .org 0800h
   LD  B,00DDh      ;NUMBER OF STEPS
   LD  HL,0A00h
