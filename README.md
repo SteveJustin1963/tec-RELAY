@@ -2,6 +2,8 @@
 
 TE 11-50, issue 11 page 50
 
+![](https://github.com/SteveJustin1963/tec-RELAY/blob/master/pics/cct1.png)
+
 "The TEC-1 Relay Board has been designed to give the TEC-1 an interface with the real world. " Its designed to give the TEC-1 an interface with the real world. It can be used in such applications as the control of model railways or complex light sequencers. It can also be used to implement timing and control functions for machinery. The project will drive 8 on-board relays or external relays with suitable coil resistances and/or it is possible to drive small low-voltage lamps directly.
 
 The RELAY BOARD can be used to control the real world. It can be used to turn lights, motors and other equipment on and off. The only limitations are very heavy currents and high voltages. The RELAY BOARD takes up to 8 relays and these can be turned ON and OFF in absolutely ANY order, by the program we have developed.
